@@ -8,13 +8,15 @@
   color: #444040;
 }
 
-form {
+form,
+button {
   text-align: center;
   font-weight: 300;
   font-size: 20px;
 }
 
-.city-form {
+.city-form,
+button {
   background-color: #efe8e8;
   border: 1px solid #b7aeae;
   border-radius: 15px;
@@ -22,7 +24,8 @@ form {
   outline: none;
 }
 
-.button {
+.button,
+button {
   background-color: #bfb3b3;
   border: 1px solid #afa1a2;
   border-radius: 15px;
@@ -31,7 +34,13 @@ form {
   color: #444040;
 }
 
-.button:hover {
+button {
+  display: block;
+  margin: 20px auto;
+}
+
+.button:hover,
+button:hover {
   background-color: #aa9496;
   cursor: default;
   transition: all 200ms ease;
@@ -55,6 +64,12 @@ h3 {
   font-style: italic;
 }
 
+h4 {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 auto;
+}
 .col-6 {
   margin: 70px auto;
 }

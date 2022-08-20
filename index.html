@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Final Project</title>
+		<title>Final Project</title>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,29 +24,35 @@
     <script
       src="https://kit.fontawesome.com/a6df653b19.js"
       crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles/style.css" />
+		></script>
+
+		<link rel="stylesheet" href="src/styles.css" />
+
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <form>
+          <form id="search-form">
             <label for="city">What is your current city? </label>
-            <input class="city-form" type="text" />
+            <input class="city-form" id="city-input" type="text" />
             <input class="button" type="submit" />
-          </form>
+					</form>
+					<button id="loc">Current location</button>
         </div>
       </div>
       <div class="row">
         <div class="col-6 city-data">
-          <h1>Odesa</h1>
+					<h1 id="city">Odesa</h1>
+					<h2 id="date">Tuesday</h2>
 
-          <h2>+24°</h2>
-          <h3>Mostly cloudly</h3>
+          <h2 id="temp">+24°</h2>
+					<h3>Mostly cloudly</h3>
+					<h4 id="humidity">Humidity: 36%</h3>
+					<h4 id="wind">Wind: 11</h3>
         </div>
         <div class="col-6 weather-image">
-          <img src="media/clouds.png" alt="weather icon" width="150" />
+          <img src="src/clouds.png" alt="weather icon" width="150" />
         </div>
       </div>
       <div class="row row-cols-5">
@@ -86,6 +95,6 @@
         </div>
       </div>
     </div>
-    <script src="scripts/app.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
