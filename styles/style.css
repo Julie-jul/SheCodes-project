@@ -1,13 +1,17 @@
 .container {
   background-color: #e3dada;
   width: 60%;
-  margin: 40px auto;
+  margin: 40px auto 5px;
   padding: 50px;
   border-radius: 15px;
   font-family: "Raleway", sans-serif;
   color: #444040;
 }
 
+.credits {
+  width: 60%;
+  margin: 0 auto;
+}
 form,
 button {
   text-align: center;
@@ -46,25 +50,48 @@ button:hover {
   transition: all 200ms ease;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+li:first-letter {
+  text-transform: capitalize;
+}
+
+#fahrenheit-temp,
+#celsius-temp {
+  text-decoration: none;
+  color: #444040;
+  cursor: default;
+}
+
 h1 {
   font-weight: 600;
-  margin: 10px auto;
+  margin: 0 auto;
   font-size: 38px;
 }
-h2 {
-  margin: 10px auto;
+#date,
+#temp-data {
+  margin: 0 auto;
   font-size: 30px;
   font-weight: 500;
 }
 
-h3 {
-  margin: 10px auto;
+#weather-description {
+  margin: 0 auto;
   font-size: 26px;
   font-weight: 400;
   font-style: italic;
 }
 
-h4 {
+#humidity,
+#wind {
   font-size: 22px;
   font-style: italic;
   font-weight: 300;

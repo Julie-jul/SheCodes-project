@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Final Project</title>
-		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
+    <title>Final Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,10 +23,9 @@
     <script
       src="https://kit.fontawesome.com/a6df653b19.js"
       crossorigin="anonymous"
-		></script>
+    ></script>
 
-		<link rel="stylesheet" href="styles/style.css" />
-
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <div class="container">
@@ -37,22 +35,33 @@
             <label for="city">What is your current city? </label>
             <input class="city-form" id="city-input" type="text" />
             <input class="button" type="submit" />
-					</form>
-					<button id="loc">Current location</button>
+          </form>
+          <!-- <button id="loc">Current location</button> -->
         </div>
       </div>
       <div class="row">
         <div class="col-6 city-data">
-					<h1 id="city">Odesa</h1>
-					<h2 id="date">Tuesday</h2>
+          <ul>
+            <li><h1 id="city">Odesa</h1></li>
+            <li id="date">Tuesday</li>
 
-          <h2 id="temp">+24°</h2>
-					<h3>Mostly cloudly</h3>
-					<h4 id="humidity">Humidity: 36%</h3>
-					<h4 id="wind">Wind: 11</h3>
+            <li id="temp-data">
+              <span id="temp">+24°</span>
+              <a href="#" id="celsius-temp">C</a> |
+              <a href="#" id="fahrenheit-temp">F</a>
+            </li>
+            <li id="weather-description">Mostly cloudly</li>
+            <li id="humidity">Humidity: 36%</li>
+            <li id="wind">Wind: 11</li>
+          </ul>
         </div>
         <div class="col-6 weather-image">
-          <img src="media/clouds.png" alt="weather icon" width="150" />
+          <img
+            src="media/clouds.png"
+            alt="weather icon"
+            width="150"
+            id="temp-icon"
+          />
         </div>
       </div>
       <div class="row row-cols-5">
@@ -94,9 +103,11 @@
           <div class="temperature-night">+21°</div>
         </div>
       </div>
-    <div class="credits">
-      <a href="https://github.com/Julie-jul/SheCodes-project" target="_blank">Open-source code</a>, by Julie Doroshenko
     </div>
+    <div class="credits">
+      <a href="https://github.com/Julie-jul/SheCodes-project" target="_blank"
+        >Open-source code</a
+      >, by Julie Doroshenko
     </div>
     <script src="scripts/app.js"></script>
   </body>
