@@ -107,9 +107,13 @@ h1 {
 }
 
 .weather-image {
-  text-align: right;
-  padding-right: 17%;
-  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 100px;
+}
+.weather-image img {
+  width: 60%;
 }
 
 .col {
@@ -127,10 +131,8 @@ h5 {
   margin-top: 10px;
 }
 
-.weather-ic {
-  font-size: 34px;
-  margin: 10px auto;
-  color: #847b7b;
+.col-2 {
+  text-align: center;
 }
 
 .temperature-day,
@@ -139,8 +141,13 @@ h5 {
   font-size: 20px;
 }
 
-.weather-ic:hover {
-  color: #aa949a;
+.weather-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.weather-icon:hover {
+  opacity: 0.5;
   cursor: default;
   transition: all 200ms ease;
 }

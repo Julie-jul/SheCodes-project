@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Project</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,17 +19,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap"
       rel="stylesheet"
     />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/a6df653b19.js"
-      crossorigin="anonymous"
-    ></script>
 
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -39,6 +34,7 @@
           <!-- <button id="loc">Current location</button> -->
         </div>
       </div>
+
       <div class="row">
         <div class="col-6 city-data">
           <ul>
@@ -64,45 +60,7 @@
           />
         </div>
       </div>
-      <div class="row row-cols-5">
-        <div class="col card">
-          <h5>Monday</h5>
-          <div class="weather-ic">
-            <i class="fa-solid fa-cloud-rain"></i>
-          </div>
-          <div class="temperature-day">+29°</div>
-          <div class="temperature-night">+20°</div>
-        </div>
-
-        <div class="col card">
-          <h5>Tuesday</h5>
-          <div class="weather-ic"><i class="fa-solid fa-sun"></i></div>
-          <div class="temperature-day">+30°</div>
-          <div class="temperature-night">+18°</div>
-        </div>
-        <div class="col card">
-          <h5>Wednesday</h5>
-          <div class="weather-ic"><i class="fa-solid fa-sun"></i></div>
-          <div class="temperature-day">+29°</div>
-          <div class="temperature-night">+18°</div>
-        </div>
-        <div class="col card">
-          <h5>Thursday</h5>
-          <div class="weather-ic">
-            <i class="fa-solid fa-cloud-sun-rain"></i>
-          </div>
-          <div class="temperature-day">+31°</div>
-          <div class="temperature-night">+21°</div>
-        </div>
-        <div class="col card">
-          <h5>Friday</h5>
-          <div class="weather-ic">
-            <i class="fa-solid fa-cloud-sun-rain"></i>
-          </div>
-          <div class="temperature-day">+31°</div>
-          <div class="temperature-night">+21°</div>
-        </div>
-      </div>
+      <div id="forecast"></div>
     </div>
     <div class="credits">
       <a href="https://github.com/Julie-jul/SheCodes-project" target="_blank"
